@@ -1,6 +1,6 @@
-df0 <- read.csv("E:/udemyha/business analytics/introduction to business analytics with R/3.9jan17Items.csv")
-df1 <- read.csv("E:/udemyha/business analytics/introduction to business analytics with R/index_19.9mar17Items.csv")
-df2<- read.csv("E:/udemyha/business analytics/introduction to business analytics with R/index_19.11_feb17Items.csv")
+df0 <- read.csv("~/3.9jan17Items.csv")
+df1 <- read.csv("~/index_19.9mar17Items.csv")
+df2<- read.csv("~/index_19.11_feb17Items.csv")
 class(df$Time)
 class(df$Time)
 ?names
@@ -26,9 +26,9 @@ leftside <- allitem[,1:12]
 rightside <- allitem[,13:21]
 allitems2 <- cbind(leftside , rightside)
 
-filetoimport <- c("E:/udemyha/business analytics/introduction to business analytics with R/3.9jan17Items.csv",
-                  "E:/udemyha/business analytics/introduction to business analytics with R/index_19.9mar17Items.csv",
-                  "E:/udemyha/business analytics/introduction to business analytics with R/index_19.11_feb17Items.csv")
+filetoimport <- c("~/3.9jan17Items.csv",
+                  "~/index_19.9mar17Items.csv",
+                  "~/index_19.11_feb17Items.csv")
 allitems <- data.frame()
 for(f in filetoimport){
   tempdf <- read.csv(f , stringsAsFactors = F)
